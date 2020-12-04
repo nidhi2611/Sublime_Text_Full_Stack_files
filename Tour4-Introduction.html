@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to TOUR-4</title>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+			box-sizing: border-box;
+		}
+		nav{
+			height:7vh;
+			background-color: blue;
+		}
+		.nav-links{
+			display: flex;
+			list-style: none;
+			width:50%;
+			justify-content: space-around;
+			align-items: center;
+			height:100%;
+			
+			margin-left: auto;
+		}
+		.nav-links li a{
+			color: white;
+			font-size: 16px;
+			font-family: 'Kaustan Script',Cursive,Arial;
+			text-decoration: none;
+		}
+		@media screen and (max-width: 768px){
+			.nav-links{
+				position: fixed;
+				background-color: blue;
+				height: 100vh;
+				width:100%;
+				flex-direction: column;
+				clip-path: circle(100px at 90%,-10%);
+				-webkit-clip-path: circle(100px at 90%,-10%);
+				transition: all 1s ease-out;
+				pointer-events: none;
+			}
+			.nav-links.open{
+				clip-path: circle(1000px at 90%,-10%);
+				-webkit-clip-path: circle(1000px at 90%,-10%);
+				pointer-events: all;
+			}
+			.line{
+				width: 30px;
+				height: 3px;
+				background-color: white;
+				margin: 5px;
+			}
+			nav{
+				position: relative;
+			}
+			.hamburger{
+				position: absolute;
+				cursor: pointer;
+				right:5%;
+				
+				line-height: 7vh;
+				transform: translate(-5%,50%);
+				z-index: 100;
+			}
+		}
+	</style>
+	
+</head>
+<body>
+		<nav>
+			<div class="hamburger">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<ul class="nav-links">
+				<li><a href="">Home</a></li>
+				<li><a href="">Login</a></li>
+				<li><a href="">Dive In</a></li>
+				<li><a href="">About Us</a></li>
+				<li><a href="">Book Now</a></li>
+			</ul>
+		</nav>
+
+		<section class="landing">
+			<img src="C:\Users\HP\Desktop\milan0.JPG">
+		</section>
+
+		<script type="text/javascript" src="java.js">
+		
+	</script>
+</body>
+</html>
